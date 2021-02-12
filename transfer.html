@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <title>Taradol Game Shop - ซื้อเกมส์ออนไลน์ ง่าย สะดวก รวดเร็ว</title>
+</head>
+<body style="background-color: #171717;">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm" style="background-color: #1b1b1b;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">TGS - ซื้อเกมส์ออนไลน์</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">หน้าแรก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">เกมส์ตัวอย่าง</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="transfer.html">ส่งหลักฐานการโอนเงิน</a>
+            </li>
+          </ul>
+          <span class="navbar-text">จัดทำโดย นาย ท...</span>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="padding-top: 80px;">
+<div class="row">
+
+<div class="col-12 col-md-12 pb-4">
+    <div class="card border-0" style="border-radius: 15px;">
+        <div class="card-body bg-dark text-white" style="border-radius: 12px;">
+            <p class="h3 text-success">ส่งหลักฐานการโอนเงิน</p>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <select class="form-control" id="exampleFormControlSelect1" autofocus="">
+                            <option>โปรดเลือกธนาคาร</option>
+                            <option>กสิกรไทย (เลขที่บัญชี 026-827-4928)</option>
+                            <option>ไทยพาณิชย์ (เลขที่บัญชี 011-987-4982)</option>
+                            <option>ธนาคารทหารไทย (เลขที่บัญชี 011-987-4982)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-label-group">
+                        <input type="date" id="date" class="form-control" placeholder="Email address" style="font-size: 16px;">
+                        <label for="date">วันที่</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-label-group">
+                        <input type="time" id="time" class="form-control" placeholder="Email address" style="font-size: 16px;">
+                        <label for="time">เวลา</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-label-group">
+                        <input type="tel" id="tel" class="form-control" placeholder="Email address" style="font-size: 16px;" maxlength="10">
+                        <label for="tel">จำนวนเงิน</label>
+                    </div>
+                </div><div class="col-12">
+                    <div class="form-group">
+                        <label for="file"><b>หลักฐานการโอนเงิน <small class="text-danger">(ถ้ามี)</small></b></label>
+                        <input type="file" class="form-control-file" id="file">
+                    </div>
+                </div>
+                <div class="col-md-6 col-6">
+                    <button id="saveAddress" class="btn btn-success btn-block"><span class="fa fa-location-arrow"></span> ส่งข้อมูล</button>
+                </div>
+                <div class="col-md-6 col-6">
+                    <button id="refAddress" class="btn btn-warning btn-block text-white"><span class="fa fa-redo-alt"></span> รีเซ็ต</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-12 col-md-12 pb-5">
+    <div class="card border-0" style="border-radius: 15px;">
+        <div class="card-body bg-dark text-white" style="border-radius: 12px;">
+            <p class="h5 my-auto">การชำระเงิน</p>
+            <hr>
+            <div class="row">
+                <div class="col-12 mb-5 text-center">
+                    <div class="row">
+                        <div class="col-md-2 col-4"></div>
+                        <div class="col-md-2 col-4">
+                            <img src="assets/img/3362_image_th_160714053532.png" width="100%">
+                        </div>
+                        <div class="col-md-2 col-12 my-auto" style="color: #005ba5">
+                            <h4><b>ทหารไทย</b></h4>
+                        </div>
+                        <div class="col-md-4 col-12 my-auto">เลขที่บัญชี
+                            <b id="copyTmb" style="cursor: pointer; color: #005ba5">019-917-7411
+                                <small class="fa fa-paste"></small>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-5 text-center">
+                    <div class="row">
+                        <div class="col-md-2 col-4"></div>
+                        <div class="col-md-2 col-4">
+                            <img src="assets/img/scb-icon.png" width="100%">
+                        </div>
+                        <div class="col-md-2 col-12 my-auto" style="color: #7600a5">
+                            <h4><b>ไทยพาณิชย์</b></h4>
+                        </div>
+                        <div class="col-md-4 col-12 my-auto">เลขที่บัญชี
+                            <b id="copyScb" style="cursor: pointer; color: #7600a5">011-987-4982
+                                <small class="fa fa-paste"></small>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>

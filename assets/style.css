@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Prompt';
+    src: url("Prompt.woff2");
+}
+  
+* {
+    font-family: 'Prompt';
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.plg-25px {
+    text-indent: 25px;
+}
+.detail {
+    font-size: 13px;
+}
